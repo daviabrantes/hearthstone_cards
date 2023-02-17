@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hearthstone_navigation"
+    app:startDestination="@id/filterFragment">
+
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.daviabrantes.hearthstone.presentation.fragment.FilterFragment"
+        android:label="FilterFragment"
+        tools:layout="@layout/fragment_filter">
+        <action
+            android:id="@+id/action_filterFragment_to_listFragment"
+            app:destination="@id/listFragment"/>
+        <argument
+            android:name="cardParameters"
+            app:argType="com.daviabrantes.hearthstone.presentation.model.CardVO"/>
+        <argument
+            android:name="filterType"
+            app:argType="com.daviabrantes.hearthstone.util.Filter"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.daviabrantes.hearthstone.presentation.fragment.ListFragment"
+        android:label="List"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"/>
+        <argument
+            android:name="filterParameters"
+            app:argType="string"/>
+        <argument
+            android:name="filterName"
+            app:argType="string"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.daviabrantes.hearthstone.presentation.fragment.DetailsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="cardId"
+            app:argType="string"/>
+    </fragment>
+
+</navigation>

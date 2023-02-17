@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">hearthstone</string>
+    <string name="page_title">Hearthstone</string>
+    <string name="classes_filter">Classes</string>
+    <string name="types_filter">Types</string>
+    <string name="qualities_filter">Qualities</string>
+    <string name="filter_all">All Cards</string>
+    <string name="filter_druid">Druid</string>
+    <string name="filter_hunter">Hunter</string>
+    <string name="filter_spell">Spell</string>
+    <string name="filter_weapon">Weapon</string>
+    <string name="filter_common">Common</string>
+    <string name="filter_epic">Epic</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="flavor">Flavor: </string>
+    <string name="set">Set: </string>
+    <string name="description">Description: </string>
+    <string name="type">Type: </string>
+    <string name="faction">Faction: </string>
+    <string name="attack">Attack: </string>
+    <string name="cost">Cost: </string>
+    <string name="health">Health: </string>
+    <string name="rarity">Rarity: </string>
+    <string name="service_error">Um erro ocorreu.</string>
+
+</resources>
